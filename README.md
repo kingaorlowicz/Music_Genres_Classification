@@ -3,6 +3,11 @@
 - **Data:** Free Music Archive dataset (official repository): https://github.com/mdeff/fma
 ## Overview
 This project aims to classify music genres using the Free Music Archive (FMA) dataset. It involves audio signal processing, feature engineering, and machine learning.
+
+---
+
+Note: This project was initially started in collaboration with user Jakub-Karczewski, but is currently being developed independently.
+
 ## Progress Tracking: What’s Done So Far? (FMA SMALL)
 1. Data Preparation & Exploration
    - Metadata Integration: Successfully mapped audio file paths to the FMA metadata database.
