@@ -1,3 +1,5 @@
 *.csv
 fma_metadata/
 fma_small/
+finalny_model_muzyczny/
+wyniki_modelu_muzycznego/
