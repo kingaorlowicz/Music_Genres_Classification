@@ -40,22 +40,21 @@ The best results among classical algorithms were achieved using LightGBM trained
 Test Accuracy: 0.4719
 
 Classification Report:
-```
-+----------------+-----------+--------+----------+---------+
-| Genre          | Precision | Recall | F1-Score | Support |
-+----------------+-----------+--------+----------+---------+
-| Electronic     |    0.51   |  0.56  |   0.53   |   200   |
-| Experimental   |    0.40   |  0.38  |   0.39   |   200   |
-| Folk           |    0.44   |  0.48  |   0.46   |   200   |
-| Hip-Hop        |    0.57   |  0.69  |   0.63   |   200   |
-| Instrumental   |    0.39   |  0.38  |   0.38   |   200   |
-| International  |    0.52   |  0.46  |   0.49   |   200   |
-| Pop            |    0.28   |  0.21  |   0.24   |   200   |
-| Rock           |    0.59   |  0.60  |   0.60   |   200   |
-+----------------+-----------+--------+----------+---------+
-| Overall Acc    |           |        |   0.47   |  1600   |
-+----------------+-----------+--------+----------+---------+
-```
+
+| Genre | Precision | Recall | F1-Score | Support |
+| :--- | :---: | :---: | :---: | :---: |
+| **Electronic** | 0.51 | 0.56 | 0.53 | 200 |
+| **Experimental** | 0.40 | 0.38 | 0.39 | 200 |
+| **Folk** | 0.44 | 0.48 | 0.46 | 200 |
+| **Hip-Hop** | 0.57 | 0.69 | 0.63 | 200 |
+| **Instrumental** | 0.39 | 0.38 | 0.38 | 200 |
+| **International** | 0.52 | 0.46 | 0.49 | 200 |
+| **Pop** | 0.28 | 0.21 | 0.24 | 200 |
+| **Rock** | 0.59 | 0.60 | 0.60 | 200 |
+| | | | | |
+| **Overall Acc** | | | **0.47** | **1600** |
+
+
 Classical models performed most reliably on genres with distinct rhythmic and instrumental structures, such as Hip-Hop, Rock, and Electronic. Conversely, Pop was the most difficult genre to classify across all tested ML models, likely due to its stylistic diversity and overlapping characteristics with other genres.
 
 ---
@@ -67,22 +66,20 @@ Implementing a Transfer Learning approach with a pre-trained Transformer model (
 Test Accuracy: 0.57
 
 Classification Report:
-```
-+----------------+-----------+--------+----------+---------+
-| Genre          | Precision | Recall | F1-Score | Support |
-+----------------+-----------+--------+----------+---------+
-| Electronic     |    0.60   |  0.64  |   0.62   |   101   |
-| Experimental   |    0.47   |  0.41  |   0.44   |    90   |
-| Folk           |    0.56   |  0.52  |   0.54   |    95   |
-| Hip-Hop        |    0.73   |  0.72  |   0.72   |    96   |
-| Instrumental   |    0.49   |  0.61  |   0.54   |    94   |
-| International  |    0.66   |  0.68  |   0.67   |    96   |
-| Pop            |    0.31   |  0.25  |   0.28   |   100   |
-| Rock           |    0.65   |  0.70  |   0.67   |   128   |
-+----------------+-----------+--------+----------+---------+
-| Overall Acc    |           |        |   0.57   |   800   |
-+----------------+-----------+--------+----------+---------+
-```
+
+| Genre | Precision | Recall | F1-Score | Support |
+| :--- | :---: | :---: | :---: | :---: |
+| **Electronic** | 0.60 | 0.64 | 0.62 | 101 |
+| **Experimental** | 0.47 | 0.41 | 0.44 | 90 |
+| **Folk** | 0.56 | 0.52 | 0.54 | 95 |
+| **Hip-Hop** | 0.73 | 0.72 | 0.72 | 96 |
+| **Instrumental** | 0.49 | 0.61 | 0.54 | 94 |
+| **International** | 0.66 | 0.68 | 0.67 | 96 |
+| **Pop** | 0.31 | 0.25 | 0.28 | 100 |
+| **Rock** | 0.65 | 0.70 | 0.67 | 128 |
+| | | | | |
+| **Overall Acc** | | | **0.57** | **800** |
+
 The neural network was far more effective at capturing subtle audio nuances. While the general difficulty trends remained the same (Pop remained the hardest to classify), scores for every single genre improved by approximately 10 percentage points.
 
 --- 
