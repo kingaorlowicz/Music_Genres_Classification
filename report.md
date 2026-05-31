@@ -380,7 +380,7 @@ In contrast, the deep learning model (DistilHuBERT):
 The improvement of ~10 percentage points is significant, especially considering that the dataset is small and the model was trained for only 3 epochs.
 
 ### Why Some Genres Are Easy to Classify
-Across all models — classical and deep learning — the same genres consistently achieved the highest scores:
+Across all models (classical and deep learning), the same genres consistently achieved the highest scores:
 
 **Rock**  
   - strong, steady rhythm
