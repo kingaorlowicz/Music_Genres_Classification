@@ -97,7 +97,7 @@ To better understand the structure of the feature space and to reduce dimensiona
 For both feature sets, I generated a cumulative explained variance plot. Surprisingly, the first two principal components explained almost 100% of the total variance [1]. At first glance, this might suggest that the data lies mostly in a low‑dimensional space and that PCA should work very well. However, this turned out to be misleading.
 
 <figure>
-  <img src="fig/pca_cvp_librosa70.png" alt="cumulative explained variance">
+  <img src="fig/pca_cvp_librosa70.png" alt="cumulative explained variance" width="60%">
   <figcaption>[1] Cumulative Explained Variance</figcaption>
 </figure>
 
@@ -113,7 +113,7 @@ Because of this, PCA captures a lot of variance very quickly - but this variance
 I also plotted the projection of all samples onto the first two components [2]. The result was very clear - all points were clustered tightly in one place, with no visible separation between genres. There were no clusters, no patterns, and no boundaries.
 
 <figure>
-  <img src="fig/pca_librosa70.png" alt="cumulative explained variance">
+  <img src="fig/pca_librosa70.png" alt="cumulative explained variance" width="60%">
   <figcaption>[2] PCA1/PCA2</figcaption>
 </figure>
 
@@ -207,7 +207,7 @@ Classification Report (test set):
 Confusion Matrix (test set):
 
 <figure>
-  <img src="fig/cm_SVM.png" alt="Confusion Matrix SVM">
+  <img src="fig/cm_SVM.png" alt="Confusion Matrix SVM" width="60%">
 </figure>
 
 2. **LightGBM with Librosa full set**
@@ -235,7 +235,7 @@ Classification Report (test set):
 Confusion Matrix (test set):
 
 <figure>
-  <img src="fig/cm_lgbm.png" alt="Confusion Matrix LGBM">
+  <img src="fig/cm_lgbm.png" alt="Confusion Matrix LGBM" width="60%">
 </figure>
 
 ### Confusion Matrix Analysis
@@ -338,7 +338,7 @@ Classification Report:
 Confusion Matrix:
 
 <figure>
-  <img src="fig/cm_dl.png" alt="Confusion Matrix Transfer Learning">
+  <img src="fig/cm_dl.png" alt="Confusion Matrix Transfer Learning" width="60%">
 </figure>
 
 ### Classification Report and Confusion Matrix Analysis (DistilHuBERT)
