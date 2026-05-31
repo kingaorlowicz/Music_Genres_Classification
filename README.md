@@ -4,12 +4,13 @@
 
 Note: This project was initially started in collaboration with user Jakub-Karczewski, but is currently being developed independently.
 
+**Note:** A comprehensive, in-depth academic report detailing the methodology, feature analysis, and model evaluations is available in the [report.md](report.md) file.
 
 ## Overview
 This is an academic project developed as part of the Data Mining course.
 The project focuses on music genre classification using the Free Music Archive (FMA) dataset. It combines audio signal processing, feature engineering, and machine learning techniques to build and evaluate predictive models, as well as to understand which audio features contribute most to genre discrimination.
 
-## Progress Tracking: What’s Done So Far? (FMA SMALL)
+## Project Deliverables & Completed Tasks (FMA SMALL)
 1. Data Preparation & Exploration
    - Metadata Integration: Successfully mapped audio file paths to the FMA metadata database.
    - Audio Processing: Extracted audio-based features using multiple libraries.
@@ -32,7 +33,7 @@ The project focuses on music genre classification using the Free Music Archive (
    - Preprocessing Pipeline: Resampling audio to 16kHz (required by the model), processing 10-second audio segments, AutoFeatureExtractor for robust input normalization
    - Hardware Acceleration: Training was optimized using NVIDIA CUDA on a GTX 1070 Ti, reducing training time from ~7 hours (CPU) to approximately 1 hour.
 
-## Current Results (FMA SMALL)
+## Results
 ### Classical ML
 
 The best results among classical algorithms were achieved using LightGBM trained on the full feature set extracted with Librosa.
@@ -82,10 +83,25 @@ Classification Report:
 
 The neural network was far more effective at capturing subtle audio nuances. While the general difficulty trends remained the same (Pop remained the hardest to classify), scores for every single genre improved by approximately 10 percentage points.
 
---- 
-
-Hyperparameters testing table: https://docs.google.com/spreadsheets/d/1zVdp_KwDR07jjUFOIKxyNs_meEN2bUFtcPnCqbhq_AA/edit?gid=0#gid=0
 
 ## Tech Stack
 - Language: Python
 - Libraries: Pandas, NumPy, Scikit-learn, Librosa, Essentia, Matplotlib, Seaborn, PyTorch
+
+
+## Repository Structure
+```
+Music_Genres_Classification
+ ┣ fig/                                   # Visualisations
+ ┣ .gitignore
+ ┣ deep_learning_distilhubert.ipynb       # Training the DistilHubert transfer learning model
+ ┣ dl_model_analysis.ipynb                # Evaluation and performance analysis of the Deep Learning model
+ ┣ essentia_features.ipynb                # Feature extraction and dataset creation using Essentia
+ ┣ fma_small_essentia.ipynb               # ML modeling and analysis using the Essentia feature set
+ ┣ fma_small_librosa_70.ipynb             # ML modeling and analysis using a reduced (70) Librosa feature set
+ ┣ fma_small_librosa_full.ipynb           # ML modeling and analysis using the full Librosa feature set
+ ┣ librosa_features.ipynb                 # Feature extraction and dataset creation using Librosa
+ ┣ README.md
+ ┗ report.md                              # Academic/project report and summary of findings
+ ```
+ 
