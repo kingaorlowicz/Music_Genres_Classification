@@ -90,18 +90,21 @@ The neural network was far more effective at capturing subtle audio nuances. Whi
 
 
 ## Repository Structure
-```
-Music_Genres_Classification
- ┣ fig/                                   # Visualisations
+ ```python
+ Music_Genres_Classification
+ ┣ 📂classical_ML    # ML modeling and analysis
+ ┃ ┣ fma_small_essentia.ipynb
+ ┃ ┣ fma_small_librosa_70.ipynb
+ ┃ ┗ fma_small_librosa_full.ipynb
+ ┣ 📂deep_learning   # Training and evaluation ofthe DistilHubert transfer learning model
+ ┃ ┣ distilhubert.ipynb
+ ┃ ┗ dl_model_analysis.ipynb
+ ┣ 📂feature_extraction    # Feature extraction and dataset creation
+ ┃ ┣ essentia_features.ipynb
+ ┃ ┗ librosa_features.ipynb
+ ┣ 📂fig    # Visualizations
  ┣ .gitignore
- ┣ deep_learning_distilhubert.ipynb       # Training the DistilHubert transfer learning model
- ┣ dl_model_analysis.ipynb                # Evaluation and performance analysis of the Deep Learning model
- ┣ essentia_features.ipynb                # Feature extraction and dataset creation using Essentia
- ┣ fma_small_essentia.ipynb               # ML modeling and analysis using the Essentia feature set
- ┣ fma_small_librosa_70.ipynb             # ML modeling and analysis using a reduced (70) Librosa feature set
- ┣ fma_small_librosa_full.ipynb           # ML modeling and analysis using the full Librosa feature set
- ┣ librosa_features.ipynb                 # Feature extraction and dataset creation using Librosa
- ┣ README.md
- ┗ report.md                              # Academic/project report and summary of findings
+ ┣ 📜.gitignore
+ ┣ 📜README.md
+ ┗ 📜report.md    # Academic/project report and summary of findings
  ```
- 
