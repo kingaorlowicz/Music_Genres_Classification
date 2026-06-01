@@ -285,6 +285,31 @@ Genres easiest to classify:
 Genre hardest to classify:
 - Pop
 
+### Classical ML Performance Comparison
+
+To systematicly evaluate the impact of different feature extraction methods, all four classical algorithms were benchmarked across all generated feature configurations. The table below summarizes the training and testing accuracies for each combination.
+
+| Feature Extraction | Configuration | PCA Applied | Algorithm | Train Accuracy | Test Accuracy |
+| :--- | :--- | :---: | :--- | :---: | :---: |
+| **Librosa** | Small Set | No | Logistic Regression | 0.51 | 0.39 |
+| **Librosa** | Small Set | No | SVM (RBF) | 0.51 | 0.45 |
+| **Librosa** | Small Set | No | Random Forest | 0.59 | 0.43 |
+| **Librosa** | Small Set | No | LightGBM | 0.74 | 0.44 |
+|  |  |  |  |  |  |
+| **Librosa** | Full Set | No | Logistic Regression | 0.70 | 0.44 |
+| **Librosa** | Full Set | No | SVM (RBF) | 0.44 | 0.41 |
+| **Librosa** | Full Set | No | Random Forest | 0.65 | 0.46 |
+| **Librosa** | Full Set | No | LightGBM | 0.84 | 0.47 |
+|  |  |  | |  |  |
+| **Essentia** | Small Set | No | Logistic Regression | 0.35 | 0.29 |
+| **Essentia** | Small Set | No | SVM (RBF) | 0.98 | 0.28 |
+| **Essentia** | Small Set | No | Random Forest | 0.62 | 0.30 |
+| **Essentia** | Small Set | No | LightGBM | 0.53 | 0.30 |
+
+
+
+> **Note:** Due to the extremely poor performance of PCA-based features, their results were omitted.
+
 ## Deep Learning: Transfer Learning with DistilHuBERT
 After testing classical machine learning models on hand‑crafted audio features, the next step was to use a modern deep learning approach. Instead of relying on manually engineered descriptors such as MFCCs or chroma features, deep learning models can learn their own representations directly from the raw audio signal. 
 
