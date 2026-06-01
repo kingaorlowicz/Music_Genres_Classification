@@ -90,7 +90,7 @@ The neural network was far more effective at capturing subtle audio nuances. Whi
 
 
 ## Repository Structure
- ```python
+ ```shell
  Music_Genres_Classification
  ┣ 📂classical_ML    # ML modeling and analysis
  ┃ ┣ fma_small_essentia.ipynb
@@ -104,7 +104,6 @@ The neural network was far more effective at capturing subtle audio nuances. Whi
  ┃ ┗ librosa_features.ipynb
  ┣ 📂fig    # Visualizations
  ┣ .gitignore
- ┣ 📜.gitignore
- ┣ 📜README.md
- ┗ 📜report.md    # Academic/project report and summary of findings
+ ┣ README.md
+ ┗ report.md    # Academic/project report and summary of findings
  ```
